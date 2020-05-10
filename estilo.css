@@ -1,16 +1,19 @@
 *{
     margin: 0;
     padding: 0;    
+    text-decoration: none;
 
 }
-
+ul,h1,p,a{
+    font-family:Roboto mono;
+}
 .container{
    display: grid;
    grid-template-columns: 350px 1fr;
    grid-template-rows: 1fr 100px;
    
 }
-
+/* -------------NAV------------------ */
 nav{
     background: #090C2C;
     text-align: center;
@@ -18,14 +21,15 @@ nav{
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 nav ul{
-    font-family:Roboto mono;
+    /* font-family:Roboto mono; */
   color: aliceblue;
 }nav a{
-    font-family:Roboto mono;
+    /* font-family:Roboto mono; */
     color: aliceblue;
     margin-top: 10px;
-    border: 2px solid aliceblue; 
+    border: 1px solid aliceblue; 
 }
 nav a:hover{ 
     background:black;
@@ -43,6 +47,7 @@ nav img{
     border-radius: 50%;
     border: 2px solid white;
 }
+/* ---------------main------------- */
 div .container_main{
     height: 100vh;
     width: 100%;
@@ -55,13 +60,29 @@ div .container_main{
     display: block;
     grid-row-start: 1;
     grid-row-end: 3;
-
-    
 }
 .container_main section{
+
     padding: 50px;
-    margin-bottom: 250px;
+    height: 100vh;
+    /* margin-bottom: 250px; */
 }
+/* ---------------main_title---------- */
+div .main_home{
+    background-image: url('https://www.mlgcomponentes.com/wp-content/uploads/2019/08/imagen-articulo-nombres.gif');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    
+
+}
+.main_home div{
+      height: inherit;
+      width: inherit;
+      text-align: center;
+}
+
+/* -----------FOOTER------------------- */
 footer{
     background: #090C2C  ;
     text-align: center;
