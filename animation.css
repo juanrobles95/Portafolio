@@ -16,3 +16,111 @@ to{
     padding-top: 50vh;
 }
 }
+/* ---------load------------ */
+
+.loader {
+  margin: 22vh auto;
+  border: 3vh solid #090C2C; /* Light grey */
+  border-top: 3vh solid white; /* Blue */
+  border-radius: 50%;
+ 
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------icons:hover-------- */
+
+    .icon-node-dot-js:hover {
+        content: "\e90d";
+        color: #393;
+    }
+  .icon-linkedin:hover {
+    content: "\e90a";
+    color: #0077b5;
+    background: white;
+    border-radius: 50%;
+    
+  }
+  .icon-mongodb:hover {
+    content: "\e90f";
+    color: #47a248;
+  }
+  .icon-python:hover {
+    content: "\e910";
+    color: #3776ab;
+  }
+  .icon-adobexd:hover {
+    content: "\e911";
+    color: #ff2bc2;
+  }
+  .icon-figma:hover {
+    content: "\e912";
+    color: #f24e1e;
+  }
+  .icon-docker:hover {
+    content: "\e913";
+    color: #1488c6;
+  }
+  .icon-gitlab:hover {
+    content: "\e914";
+    color: #fca121;
+  }
+  .icon-css3:hover {
+    content: "\e915";
+    color: #1572b6;
+  }
+  .icon-c:hover {
+    content: "\e902";
+    color: #a8b9cc;
+  }
+  .icon-jquery:hover {
+    content: "\e903";
+    color: #0769ad;
+  }
+  .icon-bootstrap:hover {
+    content: "\e904";
+    color: #563d7c;
+  }
+  .icon-mysql:hover {
+    content: "\e905";
+    color: #4479a1;
+  }
+  .icon-php:hover {
+    content: "\e906";
+    color: #777bb4;
+  }
+  .icon-javascript:hover {
+    content: "\e907";
+    color: #f7df1e;
+  }
+  .icon-java:hover {
+    content: "\e908";
+    color: #007396;
+  }
+  .icon-html5:hover  {
+    color: #e34f26;
+  }
+  .cursos .icon-terminal:hover {
+    content: "\e916";
+    color: black;
+  }
+  .icon-github:hover {
+    color: black;
+    
+  }
+  .icon-git:hover {
+    color: rgb(255, 30, 0);
+  }

@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;    
     text-decoration: none;
-
 }
-ul,h1,p,a{
+:root{
+    --color: aliceblue;
+}
+ul,h1,h3,p,a{
     font-family:Roboto mono;
 }
+.load_margin{
+    width: 50vh;
+    height: 50vh;}
+body{background-color: #090C2C;}
+/* --------------------------------------- */
+
 .container{
    display: grid;
    grid-template-columns: 350px 1fr;
@@ -24,12 +32,12 @@ nav{
 
 nav ul{
     /* font-family:Roboto mono; */
-  color: aliceblue;
+  color: var(--color);
 }nav a{
     /* font-family:Roboto mono; */
-    color: aliceblue;
+    color: var(--color);
     margin-top: 10px;
-    border: 1px solid aliceblue; 
+    border: 1px solid var(--color); 
 }
 nav a:hover{ 
     background:black;
@@ -73,11 +81,9 @@ div .main_home{
     height: 100vh;
     width: 100%;
     background-size: cover;
-    
-
 }
 .main_home div{
-      height: inherit;
+      height: auto;
       width: inherit;
       text-align: center;
 }
@@ -93,3 +99,14 @@ footer img{
     height: 50px;
   
 }
+.sobre_mi_container{
+    display: grid;
+    height: 80vh;
+    margin: 10px 30px;
+    grid-template-rows: 1fr 1fr  1fr 3fr;
+    /* border: 1px solid black; */
+}
+#cursos{
+ 
+}
+#profiles{}
