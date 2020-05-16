@@ -26,7 +26,7 @@
     </ul>
     <div class="nav_menu">
         <a href="#sobre_mi" id='sobremi'>Sobre mi</a>
-        <a href="#proyectos" id="project">Mis Proyectos</a>
+        <a href="#project" id="b_project">My projects</a>
         <a href="#blog">Experiencia Laboral</a>
         <a href="#contact">Contact</a>
     </div>
@@ -42,7 +42,7 @@
          <div class="sobre_mi_container"> 
 
              <div id="parrafo">
-              
+              <!-- aca se imprimen datos desde js -->
                 </div>
              <div>
                  <h3>Frimeworks</h3>
@@ -78,27 +78,48 @@
             </div>
             <div>
              <h3 style="text-align: center;">---Profile---</h3>
-             <div id="profiles">
-                <span>s</span>
-                <span>s</span>
-                <span>s</span>
-            </div>
+             <div id="profiles_container">
+                <div>
+                    <div class="profile p_platzi"><a href="https://platzi.com/@JROBLES/">ENTER PROFILE<br>Platzi</a></div>
+                    <div class="profile p_udemy"><a href="https://www.udemy.com/user/juan-robles-40/">ENTER PROFILE<br>Udemy</a></div>
+                    <div class="profile p_sololearn"><a href="https://www.sololearn.com/Profile/5981596">ENTER PROFILE<br>SoloLearn</a></div>
+                    <div class="profile p_hackerrank"><a href="https://www.hackerrank.com/mundoalexis1495">ENTER PROFILE<br>Hackerrank</a></div>
+                    <div class="profile p_git-hub"><a href="https://github.com/juanrobles95/">ENTER PROFILE<br>GitHub</a></div>
+                    <!-- <div class="profile p_"></div> -->
+                </div> 
+             </div>
             </div>
         </div>
      </section>   
-        <section id="proyectos">
-        <h1>Proyectos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, vitae illum reprehenderit optio modi atque molestias perspiciatis dolor tempore quas excepturi ipsa molestiae, suscipit magnam similique quis repudiandae sequi veritatis.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae laborum laboriosam vel, hic, consequatur labore fugit rem incidunt animi, cumque perferendis eius nam accusantium debitis voluptatum veniam quibusdam? Distinctio, enim.</p>
+        <section id="project">
+        <h1>My project</h1>
+        <div class="project_container">
+            <div class="project_item"></div>
+            <div class="project_item"></div>
+            <div class="project_item"></div>
+            <div class="project_item"></div>
+            <div class="project_item"></div>
+            <div class="project_item"></div>
+        </div>
     </section>
     <section id="blog">
         <h1>Experiencia Laboral</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, vitae illum reprehenderit optio modi atque molestias perspiciatis dolor tempore quas excepturi ipsa molestiae, suscipit magnam similique quis repudiandae sequi veritatis.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae laborum laboriosam vel, hic, consequatur labore fugit rem incidunt animi, cumque perferendis eius nam accusantium debitis voluptatum veniam quibusdam? Distinctio, enim.</p>
+       <p style="color:red;margin-top: 50px;"> &lt;- ExpLab is not defined</p>
+       <img src="https://i.pinimg.com/736x/64/00/19/640019be2787860377f117b975d5ecf8.jpg" alt="" style="width: 400px; margin: 0 auto;">
     </section>
     <section id="contact">
-        <h1>Contact</h1>
-       
+        <h1>Contact</h1>     
+     <div class="c_container">
+         
+         <div class="container_fondo">
+            <form action="enviar_formulario.php" method="GET">
+                <p>Name <input class="input" type="text" name="name"></p>
+               <p>Email<input class="input" type="text" name="email"></p><br>
+                <p><h1>Dejame tu comentario!</h1><textarea class="input_coment" type="text" name="comment"></textarea></p>
+                <input class="enviar" type="submit" name="submit">
+            </form>
+        </div>
+    </div>
     </section>
      
     </div>

@@ -12,12 +12,15 @@ ul,h1,h3,p,a{
 .load_margin{
     width: 50vh;
     height: 50vh;}
-body{background-color: #090C2C;}
+body{background-color: #090C2C;
+overflow-y: hidden;}
 /* --------------------------------------- */
 
 .container{
    display: grid;
-   grid-template-columns: 350px 1fr;
+   /* grid-template-columns: 350px 1fr; */
+   grid-template-columns: 2fr 6fr;
+
    grid-template-rows: 1fr 100px;
    
 }
@@ -56,23 +59,22 @@ nav img{
     border: 2px solid white;
 }
 /* ---------------main------------- */
+
 div .container_main{
-    height: 100vh;
-    width: 100%;
-    background: beige;
-}
-div .container_main{
-    display: block;
+    display: grid;
     overflow-y: scroll;
     height: 100vh;
-    display: block;
+    width: auto;
+    background: beige;
     grid-row-start: 1;
     grid-row-end: 3;
+    overflow-x: hidden;
 }
 .container_main section{
 
     padding: 50px;
-    height: 100vh;
+    padding-bottom: 0;
+    height: 92vh;
     /* margin-bottom: 250px; */
 }
 /* ---------------main_title---------- */
@@ -81,11 +83,56 @@ div .main_home{
     height: 100vh;
     width: 100%;
     background-size: cover;
+    
 }
 .main_home div{
       height: auto;
       width: inherit;
       text-align: center;
+}
+/* ----------------Profile------------------ */
+
+ #profiles_container{
+    display: grid;
+    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 800px;
+    height: 270px;
+} 
+#profiles_container div{
+    display: flex;
+    width: auto;
+    height: 260px;
+}
+#profiles_container .profile{
+    background-size: cover;
+    margin: auto 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+#profiles_container .profile a{
+    color: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+/* ---------profiles-fondos------------- */
+ .profile.p_platzi{
+    background-image: url('https://pbs.twimg.com/profile_images/1217314168606425088/YbI4G5Mc_400x400.jpg');
+}
+.profile.p_udemy{
+    background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/e4/1d/25/e41d25bb-a3a3-4a70-8e69-01c402cf8e56/UFBIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg');
+}
+.profile.p_git-hub{
+    background-image: url('https://www.cs.us.es/~fsancho/images/2019-07/github.png');
+}
+.profile.p_hackerrank{
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Podcasts113/v4/0b/76/31/0b7631cd-b78b-1cb1-e04c-c1326c516b4e/mza_6979595314594722300.jpg/600x600bb.jpg');
+}
+.profile.p_sololearn{
+    background-image: url('https://lh3.googleusercontent.com/6E112cbsqydvxECh-HmlXvOG5SGXCco4jv_aXZMeMKErNEsDA06Niq7p8CULJ40_6r7G');
 }
 
 /* -----------FOOTER------------------- */
@@ -106,7 +153,74 @@ footer img{
     grid-template-rows: 1fr 1fr  1fr 3fr;
     /* border: 1px solid black; */
 }
-#cursos{
+/* #cursos{
  
-}
-#profiles{}
+} */
+/* -------------contact------------ */
+    #contact{
+        background: #5cace9;
+    }
+    .c_container{
+        margin-top: 10px;
+           
+         width: 600px;
+         height: 400px;
+         border-radius: 15px;
+         /* text-align: center; */
+         color: beige;
+    }
+
+    .container_fondo .input{
+        margin-top: 20px;
+        width: 90%;
+        border: 1px solid transparent;
+        background: rgba(255, 255, 255, 0.568);
+    }
+    .input_coment{
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.568);
+        min-height: 200px;
+        min-width: 100%;
+        max-width: 120%;
+        max-height: 200px;  
+    }
+    
+    .enviar{
+        margin-top: 20px;
+        width: 30%;
+        margin-left: 70%;
+        border: 1px solid transparent;
+        background: rgba(255, 255, 255, 0.568);
+    }
+    
+
+
+    /* -----------Project-------------- */
+    #project{
+         background-image: url('https://www.iibmindia.in/wp-content/uploads/2019/05/HiRes-17.jpg');
+         background-size: cover;
+    }
+    .project_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 20px;
+        width: 100%;
+        height: 78vh;
+        justify-items: center;
+        
+    }
+    .project_container .project_item{
+        width: 200px;
+        height: 200px;
+        /* border: 2px solid red; */
+        background-image: url('https://cdn.icon-icons.com/icons2/137/PNG/512/developer_folder_20798.png');
+        background-size: cover;
+        opacity: .7;
+
+    }
+
+    /* --------------Exp_lab (#blog)------- */
+    #blog{
+        /* background-image: url(' '); */
+    }

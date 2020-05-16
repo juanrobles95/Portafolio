@@ -31,13 +31,28 @@ to{
   100% { transform: rotate(360deg); }
 }
 
+/* ----------profile----------- */
 
-
-
-
-
-
-
+#profiles_container .profile a:hover{
+   
+   text-align: center;
+   padding-top: 40%;
+   margin: 0 auto;
+   background:  rgba(0, 0, 0, 0.85);
+   width: 100%;
+   height: auto;
+   color:white;
+  }
+/* ----------contact---------------- */
+.enviar:hover{
+  border: 1px solid rgba(0, 0, 0, 0.349);
+}
+.enviar:active{
+  border: 1px solid black;
+}
+.input:active{
+  border:1px solid black;
+}
 
 
 
